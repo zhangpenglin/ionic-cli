@@ -1,3 +1,8 @@
+### 1.2.6
+
+* Fix `fs.chmodSync: Error: ENOENT` for existing projects
+
+
 ### 1.2.5
 
 * Do not watch `www/lib/` files by default
