@@ -1,6 +1,7 @@
 ### 1.2.6
 
 * Fix `fs.chmodSync: Error: ENOENT` for existing projects
+* Fix lib update to synchronously write zip file
 
 
 ### 1.2.5
