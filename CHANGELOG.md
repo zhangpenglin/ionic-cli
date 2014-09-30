@@ -3,6 +3,7 @@
 * Fix `fs.chmodSync: Error: ENOENT` for existing projects
 * Fix lib update
 * Add ionic app task
+* Starter projects can provide `app.json` to specify which plugins should be installed
 
 
 ### 1.2.5
