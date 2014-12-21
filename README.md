@@ -171,6 +171,33 @@ Deploys the Ionic app on specified platform devices. If a device is not found it
 $ ionic run ios [options]
 ```
 
+## Icon and splash screen image generation
+
+Automatically generate icons and splash screens from a source file to create each of the sizes needed for each platform, along with placing each resized and cropped image into their appropriate platform directories. Resrouce image source files can either be a `png` or `psd` Photoshop file.
+
+Since each platform has different image requirements, it's best to make your source file at the largest size needed, and let the tool do all the resizing, cropping and copying for you. Additionally, this will update and add the correct `<platform>` configs to the project's [config.xml](http://cordova.apache.org/docs/en/edge/config_ref_images.md.html#Icons%20and%20Splash%20Screens) file.
+
+During the build process, Cordova will look through the project's [config.xml](http://cordova.apache.org/docs/en/edge/config_ref_images.md.html#Icons%20and%20Splash%20Screens) file and copy the newly created resource images to the platform's specific resource folder. For example, Android's resource folder can be found in `platforms/android/res`, and iOS uses `platforms/ios/APP_NAME/Resources`.
+
+Source images are sent to Ionic's image resizing and cropping server, instead of requiring special libraries and plugins to be installed locally.
+
+
+### Icon Source Image
+
+Save an `icon.png` or `icon.psd` file at the root folder of the Cordova project. The file's minimum dimensions should be 180x180. Then run:
+
+```bash
+$ ionic icon
+```
+
+### Splash Screen Source Image
+
+Save an `splash.png` or `splash.psd` file at the root folder of the Cordova project. The file's minimum dimensions should be 2208x2208. Then run:
+
+```bash
+$ ionic splash
+```
+
 
 ## Update Ionic lib
 
