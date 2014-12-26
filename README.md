@@ -173,9 +173,9 @@ $ ionic run ios [options]
 
 ## Icon and splash screen image generation
 
-Automatically generate icons and splash screens from source files to create each size needed for each platform, in addition to copying each resized and cropped image into their platform's resource directory. Source images can either be a `png` or `psd` Photoshop file. Source images are sent to Ionic's image resizing and cropping server, instead of requiring special libraries and plugins to be installed locally.
+Automatically generate icons and splash screens from source images to create each size needed for each platform, in addition to copying each resized and cropped image into each platform's resources directory. Source images can either be a `png` or `psd` __Photoshop file__. Images are generated using Ionic's image resizing and cropping server, instead of requiring special libraries and plugins to be installed locally.
 
-Since each platform has different image requirements, so it's best to make your source image for the largest size needed, and let the tool do all the resizing, cropping and copying for you. Newly generated images will be placed in the `resources` directory at the root of the Cordova project. Additionally, the tool will update and add the correct `<platform>` configs to the project's [config.xml](http://cordova.apache.org/docs/en/edge/config_ref_images.md.html#Icons%20and%20Splash%20Screens) file.
+Since each platform has different image requirements, it's best to make a source image for the largest size needed, and let the CLI do all the resizing, cropping and copying for you. Newly generated images will be placed in the `resources` directory at the root of the Cordova project. Additionally, the CLI will update and add the correct `<platform>` configs to the project's [config.xml](http://cordova.apache.org/docs/en/edge/config_ref_images.md.html#Icons%20and%20Splash%20Screens) file.
 
 During the build process, Cordova will look through the project's [config.xml](http://cordova.apache.org/docs/en/edge/config_ref_images.md.html#Icons%20and%20Splash%20Screens) file and copy the newly created resource images to the platform's specific resource folder. For example, Android's resource folder can be found in `platforms/android/res`, and iOS uses `platforms/ios/APP_NAME/Resources`.
 
