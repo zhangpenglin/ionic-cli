@@ -171,7 +171,7 @@ Deploys the Ionic app on specified platform devices. If a device is not found it
 $ ionic run ios [options]
 ```
 
-## Icon and splash screen image generation
+## Icon and Splash Screen Image Generation
 
 Automatically generate icons and splash screens from source images to create each size needed for each platform, in addition to copying each resized and cropped image into each platform's resources directory. Source images can either be a `png` or `psd` __Photoshop file__. Images are generated using Ionic's image resizing and cropping server, instead of requiring special libraries and plugins to be installed locally.
 
