@@ -1,21 +1,7 @@
 {
   "name": "ionic",
-  "version": "1.2.14-beta5",
+  "version": "1.2.14-beta6",
   "dependencies": {
-    "MD5": {
-      "version": "1.2.1",
-      "from": "MD5@1.2.1",
-      "dependencies": {
-        "charenc": {
-          "version": "0.0.1",
-          "from": "charenc@>= 0.0.1"
-        },
-        "crypt": {
-          "version": "0.0.1",
-          "from": "crypt@>= 0.0.1"
-        }
-      }
-    },
     "archiver": {
       "version": "0.5.1",
       "from": "archiver@0.5.1",
@@ -292,6 +278,11 @@
       "version": "0.4.0",
       "from": "connect-livereload@0.4.0",
       "resolved": "https://registry.npmjs.org/connect-livereload/-/connect-livereload-0.4.0.tgz"
+    },
+    "crc": {
+      "version": "3.2.1",
+      "from": "crc@3.2.1",
+      "resolved": "https://registry.npmjs.org/crc/-/crc-3.2.1.tgz"
     },
     "cross-spawn": {
       "version": "0.2.3",
